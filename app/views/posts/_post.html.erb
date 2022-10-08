@@ -16,6 +16,7 @@
     -->
     <%= link_to "Show this post", post, data: { turbo_frame: '_top' }, class: "rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
     <%= link_to 'Edit this post', edit_post_path(post), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= button_to 'Destroy this post', post_path(post), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
     <hr class="mt-6">
   <% end %>
 <% end %>
