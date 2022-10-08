@@ -1,4 +1,4 @@
-<div id="<%= dom_id post %>">
+<%= turbo_frame_tag post do %>
   <p class="my-5">
     <strong class="block font-medium mb-1">Title:</strong>
     <%= post.title %>
@@ -14,4 +14,4 @@
     <%= link_to 'Edit this post', edit_post_path(post), class: "rounded-lg py-3 ml-2 px-5 bg-gray-100 inline-block font-medium" %>
     <hr class="mt-6">
   <% end %>
-</div>
+<% end %>
